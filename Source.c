@@ -29,7 +29,8 @@ int getSum(int myArray[]){
 	for (i = 0; i < 500; i++) {
 		getSum += myArray[i];
 	}
-	printf("%i", getSum);
+	for (i = 0; i < 500; i++) {
+	printf("%i", getSum[i]);
 	return 0;
 }
 
