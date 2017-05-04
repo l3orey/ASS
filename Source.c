@@ -47,7 +47,7 @@ int subtractAllValues(int myArray[]){
 float invertAllValues(int myArray[] ){
 	int i;
 	float temp;
-	for ( i=0; i < 500; i++){
+	for ( i=0; i < 500/2; i++){
 		temp=myArray[i];
 		myArray[i]=myArray[499-i];
 		myArray[499-i]=temp;
