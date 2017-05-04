@@ -16,14 +16,29 @@ void printGroupMemberNames(); // Phyrum Rithchea
 
 int main(void) {
 	printGroupMemberNames();
-
 	int row[500], i;
-	for (i = 0; i < 500; i++)
+	for (i = 0; i < 500; i++){
 		row[i] = i;
-
+		printf("%i ", row[i]);
+	}
+	printf("\nThis is the sum:\n");   //working
+	getSum(row);
+	printf("\nSubtract all the elements with -1:\n"); //working
+	subtractAllValues(row);
+	printf("\nInvert all the value:\n");   //working
+	invertAllValues(row);
+	printf("\nThe sum of square: \n");   //working
+	getSumOfSquares(row);
+	printf("\nPrint as character:\n");   //working
+	printAsChars(row);
 	return 1;
 }
 
+void printGroupMemberNames() {
+	printf("Liza Song\nReaksmey Kongkea Chea\nPhyrum Rithchea\nBorey Cheng\n");
+
+}
+// lYZA SONG
 int getSum(int myArray[]){
     int getSum = 0, i;
 	for (i = 0; i < 500; i++) {
@@ -32,33 +47,46 @@ int getSum(int myArray[]){
 	printf("%i ", getSum);
 	return 0;
 }
-
+// BOREY CHENG
 int subtractAllValues(int myArray[]){
 	int i;
 	for ( i=0 ; i < 500; i++){
-		myArray[i]-1;
+		myArray[i]=myArray[i]-1;
 	}
 	for ( i=0 ; i < 500; i++){
 		printf("%i ", myArray[i]);
 	}
 	return 0;
 }
-
+// BOREY CHENG
 float invertAllValues(int myArray[] ){
-	int i;
-	float temp;
-	for ( i=0; i < 500/2; i++){
+	int i, temp;
+	for ( i=0; i < 500/2; i++)
+	{
 		temp=myArray[i];
-		myArray[i]=myArray[499-i];
-		myArray[499-i]=temp;
+		myArray[i] =myArray[499-i];
+		myArray[499-i] = temp;
 	}
-	for ( i=0; i < 500; i++){
-		printf("%f ", myArray[i]);
+	for ( i=0; i < 500; i++)
+	{
+		printf("%f ", (float)myArray[i]);
 	}
 	return 0;
 }
-
-void printGroupMemberNames() {
-	printf("James Bond\n Brad Pitt/n");
-
+//kongkea
+int getSumOfSquares(int myArray[]) {
+	int n = 1, result = 0,i ;
+	for (i = 0; i < 500; i++) {
+		n = myArray[i] * myArray[i];
+		result += n;
+	}
+	printf("%i", result);
+	return 0;
+}
+//kongkea
+void printAsChars(int myArray[]) {
+	int i;
+	for ( i = 0; i < 500; i++) {
+		printf("%c ", myArray[i]);
+	}
 }
