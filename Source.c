@@ -29,18 +29,17 @@ int getSum(int myArray[]){
 	for (i = 0; i < 500; i++) {
 		getSum += myArray[i];
 	}
-	for (i = 0; i < 500; i++) {
-	printf("%i", getSum[i]);
+	printf("%i ", getSum);
 	return 0;
 }
 
 int subtractAllValues(int myArray[]){
 	int i;
-	for( i=0 ; i < 500; i++){
+	for ( i=0 ; i < 500; i++){
 		myArray[i]-1;
 	}
-	for( i=0 ; i < 500; i++){
-		printf("%i", myArray[i]);
+	for ( i=0 ; i < 500; i++){
+		printf("%i ", myArray[i]);
 	}
 	return 0;
 }
@@ -48,13 +47,13 @@ int subtractAllValues(int myArray[]){
 float invertAllValues(int myArray[] ){
 	int i;
 	float temp;
-	for( i=0; i < 500; i++){
+	for ( i=0; i < 500; i++){
 		temp=myArray[i];
 		myArray[i]=myArray[499-i];
 		myArray[499-i]=temp;
 	}
-	for( i=0; i < 500; i++){
-		printf("%f", myArray[i]);
+	for ( i=0; i < 500; i++){
+		printf("%f ", myArray[i]);
 	}
 	return 0;
 }
