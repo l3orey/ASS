@@ -35,10 +35,12 @@ int getSum(int myArray[]){
 
 int subtractAllValues(int myArray[]){
 	int i;
-	for( i=0 ; i < 500; i++)
+	for( i=0 ; i < 500; i++){
 		myArray[i]-1;
-	for( i=0 ; i < 500; i++)
+	}
+	for( i=0 ; i < 500; i++){
 		printf("%i", myArray[i]);
+	}
 	return 0;
 }
 
