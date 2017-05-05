@@ -94,7 +94,7 @@ float invertAllValues(int myArray[]) {
 //kongkea
 int getSumOfSquares(int myArray[]) {
 	int n = 1, result = 0, i;
-	for (i = 0; i < 499; i++) {   //499 not 500 cux it's from 1 to 499
+	for (i = 0; i < 499; i++) {   //499 not 500 cux it's from 0 to 499
 		n = myArray[i] * myArray[i];
 		result += n;
 	}
